@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:prettier/recommended"],
+  "plugins": [],
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error"] }]
+  },
+  "ignorePatterns": ["node_modules/", ".next/", "dist/"]
+}

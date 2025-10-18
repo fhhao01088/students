@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = "FastAPI backend service"
+authors = ["Monorepo Scaffold <dev@example.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+fastapi = "^0.114.0"
+uvicorn = {extras = ["standard"], version = "^0.30.0"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+isort = "^5.13.2"
+ruff = "^0.6.1"
+mypy = "^1.11.2"
+pytest = "^8.3.2"
+pre-commit = "^3.7.1"
+
+[tool.black]
+line-length = 88
+target-version = ["py310", "py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+src_paths = ["app"]
+
+[tool.ruff]
+line-length = 88
+src = ["app"]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_ignores = true
+check_untyped_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+pretty = true
+show_error_codes = true
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
