@@ -1,0 +1,49 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.eggs/
+*.egg-info/
+.dist-info/
+build/
+dist/
+.venv/
+venv/
+.env
+.env.*
+.mypy_cache/
+.pytest_cache/
+.coverage*
+htmlcov/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.npmrc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Misc
+coverage/
+.cache/
+.turbo/
+.svelte-kit/
+
+# OS
+ehthumbs.db
+Icon?
