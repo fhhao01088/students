@@ -1,0 +1,20 @@
+{
+  "app": {
+    "title": "Asset Management Console",
+    "subtitle": "Local desktop experience ready for native services",
+    "description": "This view showcases the Electron + Vite + Vue 3 + Pinia + TypeScript stack with all calls routed through a secure IPC bridge and no external network traffic.",
+    "environment": "Environment: {env}",
+    "lastResponse": "Latest native response: {message}"
+  },
+  "actions": {
+    "runDiagnostics": "Run local diagnostics",
+    "processing": "Processing...",
+    "ready": "Ready"
+  },
+  "status": {
+    "idle": "Awaiting native service...",
+    "successful": "Native service responded",
+    "bridgeUnavailable": "IPC bridge is not available",
+    "bridgeError": "Unable to communicate with native services"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "app": {
+    "title": "资产管理控制台",
+    "subtitle": "本地桌面体验，支持未来的原生服务能力",
+    "description": "此页面演示 Electron + Vite + Vue 3 + Pinia + TypeScript 技术栈，所有请求均通过安全的 IPC 通道完成，无需访问远程网络。",
+    "environment": "当前环境：{env}",
+    "lastResponse": "最近原生服务响应：{message}"
+  },
+  "actions": {
+    "runDiagnostics": "运行本地诊断",
+    "processing": "处理中...",
+    "ready": "准备就绪"
+  },
+  "status": {
+    "idle": "等待本地服务返回...",
+    "successful": "原生服务已响应",
+    "bridgeUnavailable": "IPC 通道暂不可用",
+    "bridgeError": "调用原生服务失败"
+  }
+}

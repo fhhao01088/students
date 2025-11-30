@@ -1,0 +1,39 @@
+{
+  "name": "zichan-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist-electron/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "lint": "eslint . --ext .ts,.tsx,.js,.vue",
+    "typecheck": "vue-tsc --noEmit",
+    "build": "electron-vite build && electron-builder --config electron-builder.config.cjs",
+    "build:mac": "electron-vite build && electron-builder --mac --config electron-builder.config.cjs",
+    "build:win": "electron-vite build && electron-builder --win --config electron-builder.config.cjs"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.15",
+    "vue-i18n": "^9.8.0"
+  },
+  "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^7.0.0",
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "@vitejs/plugin-vue": "^5.0.2",
+    "electron": "^28.2.2",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-vue": "^9.20.1",
+    "prettier": "^3.1.1",
+    "typescript": "^5.4.2",
+    "vite": "^5.0.10",
+    "vue-tsc": "^2.0.8"
+  },
+  "packageManager": "pnpm@8.14.1"
+}
