@@ -9,3 +9,5 @@ out
 .env.local
 .vscode/
 .idea/
+target/
+students/zichan2/back/target/
